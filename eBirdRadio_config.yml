@@ -1,0 +1,4 @@
+browser:
+  type: 'Chrome'
+  binary_location: "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+  driver_location: null
