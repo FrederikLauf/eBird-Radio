@@ -49,16 +49,9 @@ class EBirdRadio:
         self._browser.get("https://ebird.org/home")
         self._open_explore_page()
         self._select_initial_bird()
-        self._print_species_info()
-        time.sleep(self.pre_post_pause)
-        self._open_audio_player()
-        self._print_recording_info()
-        time.sleep(self.bird_duration)
-        self._close_audio_player()
-        time.sleep(self.pre_post_pause)
-        i = 2
+        i = 1
         while i <= self.number_of_birds:
-            self._change_species()
+            if i != 1: self._change_species()
             self._print_species_info()
             time.sleep(self.pre_post_pause)
             try:
