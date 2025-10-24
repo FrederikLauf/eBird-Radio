@@ -17,4 +17,4 @@ The script accepts three non-mandatory positional arguments:
 python eBirdRadio.py 5 10 2  # default values
 python eBirdRadio.py 50  # 50 birds with default timing
 ```
-During the session, informations about bird species and recordings is printed in the command line.
+During the session, informations about bird species and recordings are printed in the command line.
