@@ -49,9 +49,13 @@ class EBirdRadio:
         self._browser.get("https://ebird.org/home")
         self._open_explore_page()
         self._select_initial_bird()
+        inital_bird = True
         i = 1
         while i <= self.number_of_birds:
-            if i != 1: self._change_species()
+            if inital_bird is True:
+                inital_bird = False
+            else:
+                self._change_species()
             self._print_species_info()
             time.sleep(self.pre_post_pause)
             try:
