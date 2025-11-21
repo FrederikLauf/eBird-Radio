@@ -19,7 +19,7 @@ python eBirdRadio.py 50  # 50 birds with default timing
 ```
 During the session, informations about bird species and recordings are printed in the command line.
 ## Hints for selenium specific configuration
-Tested example configurations of eBirdRadio_config.yml:
+Typical example configurations of eBirdRadio_config.yml:
 
 ### Brave browser under Windows 11
 ```
